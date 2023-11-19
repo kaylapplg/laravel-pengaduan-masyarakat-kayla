@@ -1,4 +1,4 @@
-    @include('layout.navbar')
+@include('layout.navbar')
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,13 +29,10 @@
   <br><font face="comic sans ms"><label for="bukti foto" class="form-label">Bukti foto</label></font></br>
   <font face="comic sans ms"><input type="file" class="form-control" id="bukti foto"></font>
   </div>
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck"><font face="comic sans ms">Cek kembali</label></font>
     </div>
   </div>
-  <div class="col-12">
+
   <a class="nav-link" href="isi_pengiriman_pengaduan.php"><button type="submit" class="btn btn-primary">Kirim</button>
   </div>
 </form>
 </body>
-@endsection

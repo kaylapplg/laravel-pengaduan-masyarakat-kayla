@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 class MasyarakatController extends Controller
 {
     function table(){
@@ -19,15 +20,17 @@ class MasyarakatController extends Controller
         $nama = $request->nama;
         $username = $request->username;
         $password = $request->password;
-        $telp = $request->telp;
+        $telepon = $request->telepon;
 
         DB::table('masyarakat')->insert([
             'nik'=> $nik,
             'nama'=> $nama,
             'username'=> $username,
-            'password'=> $password,
-            'telp'=> $telp
+            'password'=> Hash::make($password),
+            'telepon'=> $telepon
         ]);
+
+        
 
         return redirect('/login');
     }

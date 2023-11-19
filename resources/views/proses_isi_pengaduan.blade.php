@@ -8,8 +8,6 @@
 </head>
 <body>
     @include('layout.navbar')
-</body>
-</nav>
   <form class="row g-3">
   <div class="col-md-2">
   <br><font face="comic sans ms"><label for="id pengaduan" class="form-label">Id Pengaduan</label></font></br>

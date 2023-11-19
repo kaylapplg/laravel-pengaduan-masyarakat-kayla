@@ -17,7 +17,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <img src="home.png" alt="Image" height="20" width="20">
+    <img src="{{ asset('/foto/home.png.png')}}" alt="Image" height="20" width="20">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -36,12 +36,12 @@
     function confirmLogout() {
         var confirmLogout = confirm("Anda yakin ingin logout?");
         if (confirmLogout) {
-            window.location.href = "tampilanlogin.php"; 
+            window.location.href = "/logout"; 
         }
     }
 </script>
 
-<a class="nav-link" href="tampilanlogin.php"><button class="btn btn-outline-success" onclick="confirmLogout()"><font face="comic sans ms" color="white">Logout</font></button></a>
+<a class="nav-link" href={{url("/logout")}}><button class="btn btn-outline-success" onclick="confirmLogout()"><font face="comic sans ms" color="white"><img src="{{ asset('/foto/logout.png.png')}}"  alt="Image" height="20" width="20">Logout</font></button></a>
 
   </div>
-    </body>
+  </nav>

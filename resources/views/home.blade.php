@@ -1,3 +1,4 @@
+@include('layout.navbar')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,24 +10,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gambar</title>
-    <style>
-        body{
-            background-image: url(pengaduan.png.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-        }
-        .title{
-            text-align: center;
-            font-size: 2.5em;
-            color: #000;
-        }
-
-        
+    <style>        
     </style>
 </head>
 <body>
-    @include('layout.navbar')
+<img src="{{ asset('/foto/pengaduan.png.jpg')}}" style="display:block; margin:auto; width:1343px; height:800px;">
 </body>

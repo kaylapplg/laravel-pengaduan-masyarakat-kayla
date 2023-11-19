@@ -18,8 +18,8 @@ class PengaduanController extends Controller
     return view('home');
     }
 
-  function tampil_buat_pengaduan(){
-    return view('proses_isi_pengaduan');
+  function buat_pengaduan(){
+    return view('isi_pengaduan');
   }
 
   function tampil_hasil_pengaduan(){
