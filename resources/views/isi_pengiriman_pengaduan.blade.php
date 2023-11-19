@@ -7,8 +7,6 @@
     <title>proses isi pegaduan</title>
 </head>
 <body>
-    @include('layout.navbar')
-</body>
 <table class="table">
   <thead>
     <tr>
